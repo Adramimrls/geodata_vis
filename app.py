@@ -4,6 +4,7 @@ Created on Mon Mar 14 17:55:49 2022
 
 @author: adria
 """
+from http import client
 from dash import Dash, dash_table
 import dash
 import dash_core_components as dcc
@@ -12,10 +13,19 @@ import dash_html_components as html
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+import os 
 
-clients_data = pd.read_csv("C:/Users/adria/Documents/Proj_data_Sew/clientes.csv")
-store_data=pd.read_csv("C:/Users/adria/Documents/Proj_data_Sew/proveedores.csv")
-df=pd.read_csv("C:/Users/adria/Documents/Proj_data_Sew/clientes.csv")
+
+base_path = os.getcwd()
+base_path = os.path.join(base_path, 'resources')
+clients_data_path = os.path.join(base_path, 'clientes.csv')
+store_data_path = os.path.join(base_path,'proveedores.csv')
+df_clientes_path = os.path.join(base_path,'Clientes_modificado.csv')
+
+
+clients_data = pd.read_csv(clients_data_path)
+store_data=pd.read_csv(store_data_path)
+df=pd.read_csv(clients_data_path)
 
 #Crear una tabla dinámica
 pv= pd.pivot_table(df, index=['name'], columns=["clothes"], values=['cant_prendas'])
@@ -33,7 +43,7 @@ all_data=pd.concat([store_data,clients_data])
 # print(all_data)
 
 #creacion de dataframe con datos de clientes 
-df_clientes = pd.read_csv("C:/Users/adria/Documents/Proj_data_Sew/Clientes_modificado.csv")
+df_clientes = pd.read_csv(df_clientes_path)
 #se puede leer caulquier df creado en este código (revisar los existentes)
 
 # creación del mapa 
