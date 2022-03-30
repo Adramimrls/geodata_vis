@@ -1,0 +1,18 @@
+name,type,id,gen,service,coord_x,coord_y,clothes,cant_prendas,created_date
+Roberto,client,1,h,reparacion,19.529246,-99.047979,cortina,9,2017-01-12 13:32:06.696681
+Alicia,client,2,m,transformacion,19.52716,-99.065556,pantalon,5,2017-01-27 04:24:40.870707
+Carmen,client,3,m,transformacion,19.521698,-99.050825,vestido,2,2017-01-17 15:51:13.324338
+Jose Luis,client,4,h,reparacion,19.524063,-99.068067,pantalon,3,2017-01-20 07:07:23.204141
+Priscila,client,5,m,reparacion,19.504123,-99.031966,pantalon,4,2017-01-18 04:56:41.399153
+Liliana,client,6,m,reparacion,19.501725,-99.063724,camisa,7,2017-01-23 22:35:15.119293
+Norberto,client,7,h,transformacion,19.487573,-99.032139,vestido,8,2017-01-23 16:30:34.054755
+Miguel,client,8,h,reparacion,19.528167,-99.06768,cortina,6,2017-01-04 13:49:04.722945
+Josefina,client,9,m,transformacion,19.483454,-99.054879,falda,5,2017-01-31 23:35:04.164753
+Martin,client,10,h,reparacion,19.504708,-99.058163,chamarra,1,2017-01-06 22:40:18.640682
+Alejandro,client,11,h,transformacion,19.50377,-99.020489,pantalon,5,2017-01-16 03:24:47.729453
+Octavio,client,12,h,transformacion,19.525615,-99.057685,camisa,7,2017-01-05 13:06:33.882295
+Mariana,client,13,m,reparacion,19.465817,-99.060822,vestido,12,2017-01-13 14:16:14.418939
+Olga,client,14,m,reparacion,19.475845,-99.069656,chamarra,6,2017-01-06 15:19:21.810468
+Catalina,client,15,m,reparacion,19.487187,-99.071885,cortina,4,2017-01-10 07:28:31.185043
+Luis,client,16,h,transformacion,19.492657,-99.033864,chamarra,7,2017-01-23 03:43:50.729644
+Virginia,client,17,m,transformacion,19.501829,-99.029758,vestido,8,2017-01-04 13:40:20.299065

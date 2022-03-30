@@ -1,0 +1,18 @@
+name,type,id,service,coord_x,coord_y,handle_clothes,cant_prendas
+Aguja Magica,Store,1.1,transformacion,19.468661,-99.077792,camisa,5
+Super Sastre,Store,2.1,reparacion,19.476092,-99.090557,pantalon,2
+Sewer,Store,3.1,reparacion,19.476092,-99.090557,cortina,6
+Maquinita,Store,4.1,reparacion,19.476092,-99.090557,chamarra,5
+Cose-cose,Store,5.1,transformacion,19.511145,-99.089397,vestido,10
+All-Repair,Store,6.1,transformacion,19.518197,-99.09017,pantalon,4
+"Ropa, ropa",Store,7.1,reparacion,19.508357,-99.025856,pantalon,9
+Arregla,Store,8.1,reparacion,19.51349,-99.019139,vestido,8
+Modista,Store,9.1,transformacion,19.525114,-99.037707,camisa,3
+Dobladillito,Store,10.1,transformacion,19.53372,-99.040531,pantalon,4
+Susy surce,Store,11.1,reparacion,19.549004,-99.041284,cortina,7
+Es-Telita,Store,12.1,transformacion,19.49326,-99.089878,vestido,6
+Costu-Bosque,Store,13.1,reparacion,19.460196,-99.046854,cortina,8
+Transforma ,Store,14.1,transformacion,19.484182,-99.071312,chamarra,2
+Recyclothes,Store,15.1,reparacion,19.482617,-99.049387,camisa,3
+Como nuevo,Store,16.1,reparacion,19.490427,-99.04778,pantalon,10
+Hilo dorado,Store,17.1,transformacion,19.498544,-99.034718,vestido,7
