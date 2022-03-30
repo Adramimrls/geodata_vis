@@ -3,5 +3,6 @@ WORKDIR api
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY app.py . 
+COPY ./resources ./resources
 COPY exe.sh .
 CMD ["sh","exe.sh"]
