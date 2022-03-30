@@ -57,6 +57,7 @@ fig = px.scatter_mapbox(all_data,
 fig.update_layout(mapbox_style="open-street-map")
 
 app = dash.Dash(__name__)
+server = app.server
 #a partir de aquí, se agrega lo que se desea mostrar
 app.layout = html.Div(
     
