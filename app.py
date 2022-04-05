@@ -56,6 +56,12 @@ fig = px.scatter_mapbox(all_data,
 
 fig.update_layout(mapbox_style="open-street-map")
 
+#timeseries
+df_grafica = pd.read_csv (df_clientes_path)
+print(df_grafica.head())
+fig_timeseries = px.line(df_grafica, x='created_date', y="cant_prendas",markers=True, title='Cantidad de prendas solicitadas por día ')
+
+
 app = dash.Dash(__name__)
 server = app.server
 #a partir de aquí, se agrega lo que se desea mostrar
@@ -73,6 +79,7 @@ app.layout = html.Div(
             go.Layout(title='Estado de orden por cliente', barmode='stack')
         }),
     dcc.Graph(figure=fig),
+    dcc.Graph(figure=fig_timeseries),
 
     dash_table.DataTable(df_clientes.to_dict('records'), [{"name": i, "id": i} for i in df_clientes.columns]) 
    
