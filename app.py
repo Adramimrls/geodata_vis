@@ -34,8 +34,8 @@ store_data=pd.read_csv(store_data_path)
 df=pd.read_csv(clients_data_path)
 
 #lectura de código html creado en el otro proyecto
-with open('C:/Users/adria/Documents/Proj_Tianguis/mapas/mapa.html',"r") as f:
-    mapa_prueba=f.read()
+#with open('C:/Users/adria/Documents/Proj_Tianguis/mapas/mapa.html',"r") as f:
+#mapa_prueba=f.read()
 
 #Crear una tabla dinámica
 pv= pd.pivot_table(df, index=['name'], columns=["clothes"], values=['cant_prendas'])
