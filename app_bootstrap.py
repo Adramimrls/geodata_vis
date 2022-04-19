@@ -81,9 +81,8 @@ server = app.server
 #a partir de aquí, se agrega lo que se desea mostrar
 app.layout = dbc.Container(
     
-    children=[html.Br(),
-    html.Center(html.H1(children='Análisis y visualización de datos geográficos con Python, un proyecto de Adriana Ramirez Morales.')),
-    html.Br(),
+    children=[
+    html.H1(children='Análisis y visualización de datos geográficos con Python, un proyecto de Adriana Ramirez Morales.'),
     html.Div(children='''En el último año mi interés se ha dirigido a los Sistemas de Información Geográfica 
     y el análisis de datos, como herramienta para esto último elegí Python; a continuación ejemplifico lo aprendido.\n\n
     El objetivo de este proyecto es favorecer el uso del servicio de costura y reparación de prendas de vestir para maximizar su uso
@@ -93,10 +92,14 @@ app.layout = dbc.Container(
     esta actividad.\n
     Por el momento, los datos con que se cuentan son de uso didáctico, coordenadas, nombres de clientes y establecimientos aleatorios para 
     realizar distintos ejercicios.'''),
-    
+    dbc.Row([
+        dbc.Col(html.Div("columna 1")),
+        dbc.Col(html.Div("columna 2")),
+        dbc.Col(html.Div("columna 3")),
+    ]),
     html.Br(),
     dbc.Row([dbc.Col(html.Div([
-        html.Center(html.H3(children='Ubicación de clientes y proveedores')),
+        html.H1(children='Ubicación de clientes y proveedores'),
         html.Div(children='''Visualización de datos geográficos de clientes y proveedores, utilizando Open Street Map como base'''),
         #En esta parte quiero agregar el shape de la delegación Gustavo A. Madero previamente extraida de la capa de municipios a nivel nacional,
         #disponible en el portal de la CONABIO
@@ -104,7 +107,7 @@ app.layout = dbc.Container(
 
         ])),
         dbc.Col(html.Div([
-            html.Center(html.H3(children='Gráfica interactiva')),
+            html.H1(children='Gráfica interactiva'),
             html.Div(children='''Muestra la cantidad de prendas que cada cliente desea someter a alguna de las 2 categorías establecidas 
             hasta el momento, definidas como reparación y transformación; se utiliza un color distinto para cada una de las 6 opciones de 
             prenda a aceptar'''),
@@ -122,17 +125,15 @@ app.layout = dbc.Container(
     
     
     
-    html.Center(html.H2(children='Timeseries')),
+    html.H1(children='Timeseries'),
     html.Div(children='''A partir de este comportamiento se pueden detectar valores mínimos y máximos para estimar la periodicidad 
     de eventos a lo largo del tiempo.'''),
     dcc.Graph(figure=fig_timeseries),
     
-    html.Br(),
-    html.Center(html.H2(children='Detalle de la información utilizada')),
-    html.Br(),
+    html.H1(children='DataFrame'),
+    html.Div(children='''Detalle de la información utilizada'''),
     dash_table.DataTable(df_clientes.to_dict('records'), [{"name": i, "id": i} for i in df_clientes.columns]),
-    html.Br(),
-    #html.Iframe(id='map', srcDoc=mapa_prueba, width='100%', height='600') #agregar código alóctono (embeber)
+    html.Iframe(id='map', srcDoc=mapa_prueba, width='100%', height='600') #agregar código alóctono (embeber)
    
 ])
 
