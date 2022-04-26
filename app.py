@@ -81,15 +81,7 @@ app.layout = dbc.Container(
     children=[html.Br(),
     html.Center(html.H1(children='Proyecto')),
     html.Br(),
-    html.Div(children='''En el último año mi interés se ha dirigido a los Sistemas de Información Geográfica 
-    y el análisis de datos, como herramienta para esto último elegí Python; a continuación ejemplifico lo aprendido.\n\n
-    El objetivo de este proyecto es favorecer el uso del servicio de costura y reparación de prendas de vestir para maximizar su uso
-    y disminuir la adquisisción de un producto completamente nuevo de una de las industrias más contaminantes en el mundo,
-    lo anterior a través de la vinculación de las personas interesadas en reciclar/transformar/reparar sus prendas de vestir y un "proveedor" 
-    de este servicio (con una máquina de coser) a través de una aplicación como muchas que existen actualmente, pero enfocada en 
-    esta actividad.\n
-    Por el momento, los datos con que se cuentan son de uso didáctico, coordenadas, nombres de clientes y establecimientos aleatorios para 
-    realizar distintos ejercicios.'''),
+   
     
     html.Br(),
     dbc.Row([dbc.Col(html.Div([
