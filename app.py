@@ -65,9 +65,6 @@ fig = px.scatter_mapbox(all_data,
                         color="type", zoom=12, height=600)
 
 fig.update_layout(mapbox_style="open-street-map")
-#para agregar un shape
-#mapa = gpd.read_file('C:/Users/adria/Documents/Proj_Tianguis/Del_GAM.shp')
-#mapa.plot()
 
 
 #timeseries
@@ -82,7 +79,7 @@ server = app.server
 app.layout = dbc.Container(
     
     children=[html.Br(),
-    html.Center(html.H1(children='Análisis y visualización de datos geográficos con Python, un proyecto de Adriana Ramirez Morales.')),
+    html.Center(html.H1(children='Proyecto')),
     html.Br(),
     html.Div(children='''En el último año mi interés se ha dirigido a los Sistemas de Información Geográfica 
     y el análisis de datos, como herramienta para esto último elegí Python; a continuación ejemplifico lo aprendido.\n\n
